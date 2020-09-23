@@ -1,0 +1,13 @@
+<mat-toolbar>Perfil de Usuario</mat-toolbar>
+
+<mat-form-field>
+  <input matInput placeholder="Usuario" [(ngModel)]="infoToken.user_name">
+</mat-form-field>
+
+<mat-form-field>
+  <input matInput placeholder="Roles" [(ngModel)]="infoToken.authorities">
+</mat-form-field>
+
+<button mat-fab color="warn"  style="float: right; margin-right: 20px" routerLink='/signos'>
+  <mat-icon>check_circle_outline</mat-icon>
+</button>

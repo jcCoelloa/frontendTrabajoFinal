@@ -1,0 +1,39 @@
+<form class="example-container" [formGroup]="form" #frmSignos="ngForm">
+
+
+  <div>
+
+    <div>
+      <mat-card >Nuevo Paciente</mat-card>
+    </div>
+
+
+    <div [hidden]="true">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="ID" required formControlName="id">
+      </mat-form-field>
+    </div>
+
+    <mat-form-field>
+      <input matInput placeholder="Nombres" formControlName="nombres">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Apellidos" formControlName="apellidos">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="DNI" formControlName="dni" type="number">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Telefono" formControlName="telefono" type="number">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Direccion" required formControlName="direccion">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="operar()">Aceptar</button>
+    <button mat-raised-button color="accent" (click)="cancelar()">Cancelar</button>
+  </div>
+
+</form>
